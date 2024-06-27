@@ -16,7 +16,7 @@ loginForm.addEventListener("submit", (e) => {
 
   if (login(user, password)) {
     localStorage.setItem("user", user);
-    window.location.href = "./menu.html";
+    redirectToMenu();
   } else {
     alert("Usuário ou Senha incorretos!");
   }
