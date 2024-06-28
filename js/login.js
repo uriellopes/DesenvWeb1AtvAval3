@@ -15,7 +15,7 @@ loginForm.addEventListener("submit", (e) => {
   const password = formData.get("password");
 
   if (login(user, password)) {
-    localStorage.setItem("user", user);
+    salvaUsurio(user);
     redirectToMenu();
   } else {
     alert("Usuário ou Senha incorretos!");
