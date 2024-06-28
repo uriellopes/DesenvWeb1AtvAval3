@@ -33,5 +33,6 @@ formCadastrar.addEventListener("submit", (e) => {
   } else {
     carros.push(novoCarro);
     salvarCarros(carros);
+    alert("Carro cadastrado com sucesso!");
   }
 });
