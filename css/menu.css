@@ -1,0 +1,20 @@
+.barra-navegacao {
+  display: flex;
+  gap: 20px;
+  background-color: var(--azul);
+  padding: 20px;
+  justify-content: center;
+  height: 50px;
+}
+
+.barra-navegacao .botao-navegacao {
+  color: var(--branco);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.botao-navegacao:hover {
+  border-bottom: 2px solid var(--branco);
+}
