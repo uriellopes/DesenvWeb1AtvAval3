@@ -45,7 +45,8 @@ function renderCarroCardText(name, text) {
 
 // Função que renderiza o botão de excluir um carro
 function renderExcludeButton(index) {
-  const excludeButton = document.createElement("div");
+  const excludeButton = document.createElement("button");
+  excludeButton.classList.add("secondary-button");
   excludeButton.addEventListener("click", () =>
     handleClickExcludeButton(index)
   );
@@ -57,7 +58,7 @@ function renderExcludeButton(index) {
 // Função para renderizar o card de um carro
 function renderCarroCard(carro, index) {
   const carroCard = document.createElement("div");
-  //   carroCard.classList.add("carro-card");
+  carroCard.classList.add("carro-card");
 
   const carroCardMarca = renderCarroCardText("Marca", carro.marca);
   const carroCardModelo = renderCarroCardText("Modelo", carro.modelo);
@@ -98,15 +99,15 @@ function showCarros(carros) {
 
   limparListaCarros();
 
-  const listContainer = renderListContainer();
-  const listCarrosContainer = renderListCarrosContainer();
+  // const listContainer = renderListContainer();
+  // const listCarrosContainer = renderListCarrosContainer();
 
   carros.forEach((carro, index) =>
-    listCarrosContainer.append(renderCarroCard(carro, index))
+    listElement.append(renderCarroCard(carro, index))
   );
 
-  listContainer.append(listCarrosContainer);
-  listElement.append(listContainer);
+  // listContainer.append(listCarrosContainer);
+  // listElement.append(listContainer);
 }
 
 // Adicionar listener para evento de click do botão voltar
