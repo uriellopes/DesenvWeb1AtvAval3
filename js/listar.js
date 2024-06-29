@@ -1,6 +1,7 @@
 const carros = carregaCarros(); // Carrega os carros que já existem cadastrados
 const listElement = document.getElementById("lista-carros"); // Elemento onde será mostrada a lista de carros
 const formBuscar = document.getElementById("form-buscar"); // Acessar elemento de formulário de buscar carros
+const backButton = document.getElementById("back-button"); // Elemento do botão de voltar para tela de menus;
 
 // Função para limpar o elemento que contém a lista de carros
 function limparListaCarros() {
@@ -101,6 +102,9 @@ formBuscar.addEventListener("submit", (e) => {
 
   showCarros(filteredCarros);
 });
+
+// Adicionar listener para evento de click do botão voltar
+backButton.addEventListener("click", () => redirectToMenu());
 
 // Chamar ao iniciar página para mostrar os carros que já existem cadastrados
 showCarros(carros);

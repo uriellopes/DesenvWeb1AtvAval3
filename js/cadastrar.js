@@ -1,5 +1,5 @@
-// Acessar elemento de formulário de cadastrar carros
-const formCadastrar = document.getElementById("form-cadastrar");
+const formCadastrar = document.getElementById("form-cadastrar"); // Acessar elemento de formulário de cadastrar carros
+const backButton = document.getElementById("back-button"); // Elemento do botão de voltar para tela de menus;
 
 // Adicionar listener para evento de submit do formulário
 formCadastrar.addEventListener("submit", (e) => {
@@ -36,3 +36,6 @@ formCadastrar.addEventListener("submit", (e) => {
     alert("Carro cadastrado com sucesso!");
   }
 });
+
+// Adicionar listener para evento de click do botão voltar
+backButton.addEventListener("click", () => redirectToMenu());

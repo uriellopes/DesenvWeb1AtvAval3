@@ -1,5 +1,6 @@
 const carros = carregaCarros(); // Carrega os carros que já existem cadastrados
 const listElement = document.getElementById("lista-carros"); // Elemento onde será mostrada a lista de carros
+const backButton = document.getElementById("back-button"); // Elemento do botão de voltar para tela de menus;
 
 function handleClickExcludeButton(index) {
   carros.splice(index, 1);
@@ -107,6 +108,9 @@ function showCarros(carros) {
   listContainer.append(listCarrosContainer);
   listElement.append(listContainer);
 }
+
+// Adicionar listener para evento de click do botão voltar
+backButton.addEventListener("click", () => redirectToMenu());
 
 // Chamar ao iniciar página para mostrar os carros que já existem cadastrados
 showCarros(carros);
