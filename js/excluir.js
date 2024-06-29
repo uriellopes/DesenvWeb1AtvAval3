@@ -42,6 +42,17 @@ function renderCarroCardText(name, text) {
   return card;
 }
 
+// Função que renderiza o botão de excluir um carro
+function renderExcludeButton(index) {
+  const excludeButton = document.createElement("div");
+  excludeButton.addEventListener("click", () =>
+    handleClickExcludeButton(index)
+  );
+  excludeButton.innerHTML = "Excluir";
+
+  return excludeButton;
+}
+
 // Função para renderizar o card de um carro
 function renderCarroCard(carro, index) {
   const carroCard = document.createElement("div");
@@ -62,11 +73,7 @@ function renderCarroCard(carro, index) {
   );
   const carroCardPreco = renderCarroCardText("Preço", carro.preco);
 
-  const excludeButton = document.createElement("div");
-  excludeButton.addEventListener("click", () =>
-    handleClickExcludeButton(index)
-  );
-  excludeButton.innerHTML = "Excluir";
+  const excludeButton = renderExcludeButton(index);
 
   carroCard.append(carroCardMarca);
   carroCard.append(carroCardModelo);
