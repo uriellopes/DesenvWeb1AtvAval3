@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concessionária de Veículos</title>
+  </head>
+  <body>
+    <div onclick="redirectToMenu()">Voltar</div>
+    <form id="form-buscar" action="" method="post">
+      <div>
+        Digite a marca, modelo, ano ou qualquer informação do carro que deseja
+        buscar:
+      </div>
+      <input type="text" name="buscar" />
+      <button type="submit">Buscar</button>
+      <button type="reset" onclick="handleClickReset()">Resetar</button>
+    </form>
+
+    <div>
+      <h1>Lista de carros</h1>
+
+      <div id="lista-carros"></div>
+    </div>
+
+    <script src="./js/redirects.js"></script>
+    <script src="./js/autentication.js"></script>
+    <script src="./js/classes.js"></script>
+    <script src="./js/listar.js"></script>
+  </body>
+</html>

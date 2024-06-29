@@ -23,48 +23,61 @@ class Veiculo {
     this.preco = preco;
   }
 
-  isSameMarca(carro) {
-    return this.marca === carro.marca;
+  isSameMarca(marca) {
+    return this.marca === marca;
   }
 
-  isSameModelo(carro) {
-    return this.modelo === carro.modelo;
+  isSameModelo(modelo) {
+    return this.modelo === modelo;
   }
 
-  isSameAno(carro) {
-    return this.anoFabricacao === carro.anoFabricacao;
+  isSameAno(anoFabricacao) {
+    return this.anoFabricacao === anoFabricacao;
   }
 
-  isSameCor(carro) {
-    return this.cor === carro.cor;
+  isSameCor(cor) {
+    return this.cor === cor;
   }
 
-  isSameTipo(carro) {
-    return this.tipo === carro.tipo;
+  isSameTipo(tipo) {
+    return this.tipo === tipo;
   }
 
-  isSameKm(carro) {
-    return this.kilometragem === carro.kilometragem;
+  isSameKm(kilometragem) {
+    return this.kilometragem === kilometragem;
   }
 
-  isSamePortas(carro) {
-    return this.numeroPortas === carro.numeroPortas;
+  isSamePortas(numeroPortas) {
+    return this.numeroPortas === numeroPortas;
   }
 
-  isSamePreco(carro) {
-    return this.preco === carro.preco;
+  isSamePreco(preco) {
+    return this.preco === preco;
   }
 
   isSame(carro) {
     return (
-      this.isSameMarca(carro) &&
-      this.isSameModelo(carro) &&
-      this.isSameAno(carro) &&
-      this.isSameCor(carro) &&
-      this.isSameTipo(carro) &&
-      this.isSameKm(carro) &&
-      this.isSamePortas(carro) &&
-      this.isSamePreco(carro)
+      this.isSameMarca(carro.marca) &&
+      this.isSameModelo(carro.modelo) &&
+      this.isSameAno(carro.anoFabricacao) &&
+      this.isSameCor(carro.cor) &&
+      this.isSameTipo(carro.tipo) &&
+      this.isSameKm(carro.kilometragem) &&
+      this.isSamePortas(carro.numeroPortas) &&
+      this.isSamePreco(carro.preco)
+    );
+  }
+
+  hasAnySame(value) {
+    return (
+      this.isSameMarca(value) ||
+      this.isSameModelo(value) ||
+      this.isSameAno(value) ||
+      this.isSameCor(value) ||
+      this.isSameTipo(value) ||
+      this.isSameKm(value) ||
+      this.isSamePortas(value) ||
+      this.isSamePreco(value)
     );
   }
 }
