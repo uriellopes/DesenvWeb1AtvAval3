@@ -40,7 +40,7 @@ function renderCarroCardText(name, text) {
 // Função para renderizar o card de um carro
 function renderCarroCard(carro) {
   const carroCard = document.createElement("div");
-  //   carroCard.classList.add("carro-card");
+  carroCard.classList.add("carro-card");
 
   const carroCardMarca = renderCarroCardText("Marca", carro.marca);
   const carroCardModelo = renderCarroCardText("Modelo", carro.modelo);
@@ -78,13 +78,13 @@ function showCarros(carros) {
 
   limparListaCarros();
 
-  const listContainer = renderListContainer();
-  const listCarrosContainer = renderListCarrosContainer();
+  // const listContainer = renderListContainer();
+  // const listCarrosContainer = renderListCarrosContainer();
 
-  carros.forEach((carro) => listCarrosContainer.append(renderCarroCard(carro)));
+  carros.forEach((carro) => listElement.append(renderCarroCard(carro)));
 
-  listContainer.append(listCarrosContainer);
-  listElement.append(listContainer);
+  // listContainer.append(listCarrosContainer);
+  // listElement.append(listCarrosContainer);
 }
 
 // Função para resetar a listagem de carros

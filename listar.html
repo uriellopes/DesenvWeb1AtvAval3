@@ -3,22 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/listar.css" />
+
     <title>Concessionária de Veículos</title>
   </head>
   <body>
-    <div id="back-button">Voltar</div>
-    <form id="form-buscar" action="" method="post">
-      <div>
-        Digite a marca, modelo, ano ou qualquer informação do carro que deseja
-        buscar:
+    <div class="conteudo-container">
+      <div class="title-container">
+        <h1>Lista de carros</h1>
+        <div id="back-button" class="back-button">Voltar</div>
       </div>
-      <input type="text" name="buscar" />
-      <button type="submit">Buscar</button>
-      <button type="reset" id="reset-button">Resetar</button>
-    </form>
 
-    <div>
-      <h1>Lista de carros</h1>
+      <form id="form-buscar" action="" method="post">
+        <div>
+          Digite a marca, modelo, ano ou qualquer informação do carro que deseja
+          buscar:
+        </div>
+        <input type="text" name="buscar" />
+        <button type="submit" class="primary-button">Buscar</button>
+        <button type="reset" id="reset-button" class="secondary-button">
+          Resetar
+        </button>
+      </form>
 
       <div id="lista-carros"></div>
     </div>
