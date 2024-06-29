@@ -15,6 +15,6 @@
   line-height: 50px;
 }
 
-.botao-navegacao:hover {
+.barra-navegacao .botao-navegacao:hover {
   border-bottom: 2px solid var(--branco);
 }

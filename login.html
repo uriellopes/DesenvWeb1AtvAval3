@@ -3,28 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+
     <title>Concessionária de Veículos</title>
   </head>
   <body>
-    <form id="login-form" action="" method="post">
-      <label for="user">Usuário: </label>
-      <input
-        id="user"
-        type="text"
-        placeholder="Username"
-        name="user"
-        required
-      />
-      <label for="password">Senha: </label>
-      <input
-        id="password"
-        type="password"
-        placeholder="Password"
-        name="password"
-        required
-      />
-      <button type="submit">Acessar</button>
-    </form>
+    <div class="form-container">
+      <form id="login-form" action="" method="post" class="login-card">
+        <div class="grid-template">
+          <label for="user">Usuário: </label>
+          <input
+            id="user"
+            type="text"
+            placeholder="Username"
+            name="user"
+            required
+          />
+          <label for="password">Senha: </label>
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+        </div>
+        <div>
+          <button type="submit" class="login-button">ACESSAR</button>
+        </div>
+      </form>
+    </div>
 
     <script src="./js/redirects.js"></script>
     <script src="./js/autentication.js"></script>
