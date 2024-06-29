@@ -12,16 +12,12 @@ function limparListaCarros() {
 // Função para renderizar o container da lista de carros
 function renderListContainer() {
   const listContainer = document.createElement("div");
-  // listContainer.classList.add("list-container");
-
   return listContainer;
 }
 
 // Função para renderizar o elemento container dos card de carros
 function renderListCarrosContainer() {
   const carrosContainer = document.createElement("div");
-  // carrosContainer.classList.add("carros-container");
-
   return carrosContainer;
 }
 
@@ -78,13 +74,7 @@ function showCarros(carros) {
 
   limparListaCarros();
 
-  // const listContainer = renderListContainer();
-  // const listCarrosContainer = renderListCarrosContainer();
-
   carros.forEach((carro) => listElement.append(renderCarroCard(carro)));
-
-  // listContainer.append(listCarrosContainer);
-  // listElement.append(listCarrosContainer);
 }
 
 // Função para resetar a listagem de carros

@@ -2,6 +2,7 @@ const carros = carregaCarros(); // Carrega os carros que já existem cadastrados
 const listElement = document.getElementById("lista-carros"); // Elemento onde será mostrada a lista de carros
 const backButton = document.getElementById("back-button"); // Elemento do botão de voltar para tela de menus;
 
+// Função para excluir carro ao clicar no botão de excluir
 function handleClickExcludeButton(index) {
   carros.splice(index, 1);
   alert("Carro excluido com sucesso!");
@@ -18,16 +19,12 @@ function limparListaCarros() {
 // Função para renderizar o container da lista de carros
 function renderListContainer() {
   const listContainer = document.createElement("div");
-  // listContainer.classList.add("list-container");
-
   return listContainer;
 }
 
 // Função para renderizar o elemento container dos card de carros
 function renderListCarrosContainer() {
   const carrosContainer = document.createElement("div");
-  // carrosContainer.classList.add("carros-container");
-
   return carrosContainer;
 }
 
@@ -99,15 +96,9 @@ function showCarros(carros) {
 
   limparListaCarros();
 
-  // const listContainer = renderListContainer();
-  // const listCarrosContainer = renderListCarrosContainer();
-
   carros.forEach((carro, index) =>
     listElement.append(renderCarroCard(carro, index))
   );
-
-  // listContainer.append(listCarrosContainer);
-  // listElement.append(listContainer);
 }
 
 // Adicionar listener para evento de click do botão voltar
