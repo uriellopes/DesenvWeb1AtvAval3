@@ -3,9 +3,49 @@
   --azul-hover: #1e53ff;
   --branco: #ffffff;
   --cinza: #d8d8d8;
+  --preto: #524444;
 }
 
 body {
   background-color: var(--cinza);
   margin: 0px;
+}
+
+.primary-button {
+  background-color: var(--azul);
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+  color: var(--branco);
+}
+
+.primary-button:hover {
+  background-color: var(--azul-hover);
+}
+
+.secondary-button {
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+  color: var(--azul);
+  border: none;
+  border: 1px solid var(--azul);
+}
+
+.secondary-button:hover {
+  background-color: var(--azul);
+  color: var(--branco);
+}
+
+.back-button {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--preto);
+  border: none;
+  padding: 10px;
+}
+
+.back-button:hover {
+  border-bottom: 1px solid var(--preto);
 }

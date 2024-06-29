@@ -1,0 +1,23 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 500px;
+}
+
+.card-container .form-cadastrar {
+  background-color: var(--branco);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-container .form-cadastrar .form-input-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}

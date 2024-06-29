@@ -3,30 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/cadastrar.css" />
+
     <title>Concessionária de Veículos</title>
   </head>
   <body>
-    <form id="form-cadastrar" action="" method="post">
-      <label for="marca">Marca: </label>
-      <input id="marca" type="text" name="marca" required />
-      <label for="modelo">Modelo: </label>
-      <input id="modelo" type="text" name="modelo" required />
-      <label for="anoFabricacao">Ano de Fabricação: </label>
-      <input id="anoFabricacao" type="text" name="anoFabricacao" required />
-      <label for="cor">Cor: </label>
-      <input id="cor" type="text" name="cor" required />
-      <label for="tipo">Tipo: </label>
-      <input id="tipo" type="text" name="tipo" required />
-      <label for="kilometragem">Kilometragem: </label>
-      <input id="kilometragem" type="text" name="kilometragem" required />
-      <label for="numeroPortas">Numero de Portas: </label>
-      <input id="numeroPortas" type="text" name="numeroPortas" required />
-      <label for="preco">Preço: </label>
-      <input id="preco" type="text" name="preco" required />
-      <button type="submit">Cadastrar</button>
-      <button type="reset">Resetar</button>
-      <button type="button" id="back-button">Voltar</button>
-    </form>
+    <div class="card-container">
+      <form id="form-cadastrar" action="" method="post" class="form-cadastrar">
+        <div class="form-input-grid">
+          <label for="marca">Marca: </label>
+          <input id="marca" type="text" name="marca" required />
+          <label for="modelo">Modelo: </label>
+          <input id="modelo" type="text" name="modelo" required />
+          <label for="anoFabricacao">Ano de Fabricação: </label>
+          <input id="anoFabricacao" type="text" name="anoFabricacao" required />
+          <label for="cor">Cor: </label>
+          <input id="cor" type="text" name="cor" required />
+          <label for="tipo">Tipo: </label>
+          <input id="tipo" type="text" name="tipo" required />
+          <label for="kilometragem">Kilometragem: </label>
+          <input id="kilometragem" type="text" name="kilometragem" required />
+          <label for="numeroPortas">Numero de Portas: </label>
+          <input id="numeroPortas" type="text" name="numeroPortas" required />
+          <label for="preco">Preço: </label>
+          <input id="preco" type="text" name="preco" required />
+        </div>
+        <div>
+          <button type="submit" class="primary-button">Cadastrar</button>
+          <button type="reset" class="secondary-button">Limpar</button>
+          <button type="button" id="back-button" class="back-button">
+            Voltar
+          </button>
+        </div>
+      </form>
+    </div>
 
     <script src="./js/redirects.js"></script>
     <script src="./js/autentication.js"></script>

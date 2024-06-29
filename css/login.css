@@ -21,16 +21,3 @@
   grid-template-columns: auto auto;
   gap: 20px;
 }
-
-.form-container .login-card .login-button {
-  background-color: var(--azul);
-  border: none;
-  border-radius: 2px;
-  padding: 10px;
-  cursor: pointer;
-  color: var(--branco);
-}
-
-.form-container .login-card .login-button:hover {
-  background-color: var(--azul-hover);
-}
